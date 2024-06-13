@@ -43,7 +43,8 @@
       -- New app -> Host web app -> AWS CodeCommit -> Select repo -> Check Allow AWS...
          -> Select New Service role -> Review, Save and deploy
     ** If deployment fails, refer to text below:
-        AWS have also changed the Amplify interface so you don't configure the role as part of the initial setup. However, within the app,  under App settings -> General settings, you can configure the service role after creating the app. I wouldn't have noticed this without your video walkthrough. My service role was automatically set to AdministratorAccess, which had AdministratorAccess permissions, and resulted in failed deployments. This required changing the role to AmplifyConsoleServiceRole (with the AdministratorAccess-Amplify policy) to fix this issue.
+        AWS have also changed the Amplify interface so you don't configure the role as part of the initial setup.
+        However, within the app,  under App settings -> General settings, you can configure the service role after creating the app. I wouldn't have noticed this without your video walkthrough. My service role was automatically set to AdministratorAccess, which had AdministratorAccess permissions, and resulted in failed deployments. This required changing the role to AmplifyConsoleServiceRole (with the AdministratorAccess-Amplify policy) to fix this issue.
         
 4. A registration and log-in process for users
 5. A way to do ride sharing functionality
