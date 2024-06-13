@@ -2,7 +2,7 @@
   -- Due to a few issues in AWS, it is highly advisable to use us-west-2/Oregon
 
 ### 1. A way to store, update, and pull code
-    #### Create an empty repo in CodeCommit
+    <b> Create an empty repo in CodeCommit </b>
     Add a policy to you IAM user to be able to access CodeCommit
     * Select preferred IAM user and add permissions
     * Attach policies directly
