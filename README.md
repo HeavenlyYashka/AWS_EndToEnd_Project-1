@@ -1,5 +1,7 @@
 # AWS_EndToEnd_Project-1
-This is an AWS Project that involves building an End-to-End Web Application with 7 services (listed in "Services" section). Project has been leveraged from YouTuber "[Tiny Technical Tutorials](https://www.youtube.com/@TinyTechnicalTutorials)"
+This is an AWS Project that involves building an End-to-End Web Application with 7 services (listed in "Services" section). This project has been leveraged from YouTuber "[Tiny Technical Tutorials](https://www.youtube.com/@TinyTechnicalTutorials)". 
+This project involves accessing and configuring a web application known as "Wild Rydes" that will allow a user to register an account, log-in, and request a ride from a unicorn - yes, a unicorn...
+The app is ultimately set-up to work similarly to Uber and Lyft and will allow a user to request a ride by clicking on any destination on map.
 
 ## Documentation
 ### Services
