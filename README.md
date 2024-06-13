@@ -1,5 +1,5 @@
 # AWS_EndToEnd_Project-1
-This is an AWS Project that involves building an End-to-End Web Application with 7 services
+This is an AWS Project that involves building an End-to-End Web Application with 7 services (listed in "Services" section). Project has been leveraged from YouTuber "[Tiny Technical Tutorials](https://www.youtube.com/@TinyTechnicalTutorials)"
 
 ## Documentation
 ### Services
