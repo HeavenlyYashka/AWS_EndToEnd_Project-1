@@ -1,2 +1,2 @@
 #### * Make note of region as this will play a big part in this project.
-  - Due to a few issues in AWS, it is highly advisable to use us-west-2/Oregon
+  -- Due to a few issues in AWS, it is highly advisable to use us-west-2/Oregon
