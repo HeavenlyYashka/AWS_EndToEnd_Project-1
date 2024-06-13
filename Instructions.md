@@ -8,9 +8,11 @@
     * Select preferred IAM user and add permissions
     * Attach policies directly
     * Add "AWSCodeCommitPowerUser"
+    
     Creat Git credentials for IAM user (This will allow HTTPS connections to CodeCommit)
     * In "Security Credentials" scroll to "HTTPS Git..."
     * Generate Credentials and save values for User/Pass
+    
     Clone the repository
     * Select created repo in CodeCommit and Clone HTTPS URL from "Clone URL" dropdown.
       -- This will not actually "clone" the repo but will rather copy the URL that can be used to clone the repo.
