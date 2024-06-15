@@ -111,12 +111,28 @@
       -- Use Node.js 16x for Runtime
       -- Select an existing role (select newly created role made for DynamoDB)
       -- Create function
-    
+    * Inspect index.js code
+    * Replace sample code with code from Lambda function code
+      ++ Refer to "RequestUnicorn_LambdaFunction" file provided in repo
+      ++ Only use code from Lambda Function section
+      ++ Values for certain parameters MUST be replaced to match names and strings of your entered values.
+    * Configure test event (Under Test button dropdown)
+      -- Assign an event name
+      -- Replace sample code with Test Event code
+        ++ Refer to "RequestUnicorn_LambdaFunction" file provided in repo
+        ++ Only use code from Test Event section
+      -- Save
+      -- Test, verify that statusCode: 201 is received (This means test ran successfully)
+        ++ If statusCode is not 201, review code and configure variables
+       
+### 6. A place to store and return ride results
+    Check Dynamo DB table to confirm if values were written as a result of test event
+    * Select table from DynamoDB service
+      -- Explore table items
+        ++ This button may have been removed due to UI updates.
+      -- Verify if unicorn value was generated.
+      -- Inspect unicorn
       
-      
-      
+### 7. A way to invoke ride sharing functionality
     
-    
-6. A place to store and return ride results
-7. A way to invoke ride sharing functionality
 
