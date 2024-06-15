@@ -1,5 +1,5 @@
 #### * Make note of region as this will play a big part in this project *
-  -- Due to a few issues in AWS, it is highly advisable to use us-west-2/Oregon
+  -- Due to a few issues in AWS, it is highly advisable to use us-west-2/Oregon as your region for this project
 
 ### 1. A way to store, update, and pull code
     Create an empty repo in CodeCommit
@@ -111,6 +111,7 @@
       -- Use Node.js 16x for Runtime
       -- Select an existing role (select newly created role made for DynamoDB)
       -- Create function
+    
       
       
       
