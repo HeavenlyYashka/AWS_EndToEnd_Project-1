@@ -1,6 +1,7 @@
-#### * Make note of region as this will play a big part in this project *
+#### * IMPORTANT *
   -- Due to a few issues in AWS, it is highly advisable to use us-west-2/Oregon as your region for this project
-
+  -- create account at https://www.arcgis.com/index.html
+  
 ### 1. A way to store, update, and pull code
     Create an empty repo in CodeCommit
     
@@ -79,6 +80,7 @@
       -- Open site and register by pressing "Giddy Up!"
       -- Verify email
       -- Sign In (Should recieve a "Successfully Authenticated" message)
+        ++ An auth token will be provided in this message. Copy and store this value
     
 ### 5. A way to do ride sharing functionality
     Implement ride share functionality with DynamoDB
@@ -134,5 +136,61 @@
       -- Inspect unicorn
       
 ### 7. A way to invoke ride sharing functionality
-    
+    Create a REST API in API Gateway
+    * Create API
+      -- Build REST API
+      -- New API, Enter API Name, Edge-optimized (under API endpoint type)
+      -- Create API
+    * Create authorizer
+      -- Enter name, Cognito (type), Enter Token source (preferred name)
+      -- Create authorizer
+    * Test newly created authorizer
+      -- Select and inspect newly created authorizer
+      -- In authorization field, enter auth token (refer to Step 4)
+      -- Test authorizer
+      -- Verify that status code of 200 is received (execution was successful)
+    * Create a resouce
+      -- Enter resource name, enable CORS
+      -- Create resource
+    * Create method
+      -- Create method -> Method type (POST) -> Lambda function -> Toggle Lambda proxy
+      -- Create method
+    * Select Method request
+      -- Edit
+      -- Select authorization to created Cognito user pool
+
+    Deploy API
+     * Select "Deploy API"
+       -- Select New stage
+       -- Enter stage name
+       -- Deploy
+       -- Copy and store Invoke URL
+
+    Configure repo files for Cognito changes
+    * Open repo in CodeCommit
+    * Select config.js file
+      -- Edit
+      -- Enter value for Invoke URL paramater (this was taken from previous step)
+      -- Commit changes
+    * Select ride.html file
+      -- Edit
+      -- On Line 16, change ArcGIS value from 4.3 to 4.6
+      -- On Line 95, change ArcGIS value from 4.3 to 4.6
+      -- Commit changes
+
+    Wrap it all up!
+    * After redeployment in Amplify, refresh WildRydes website
+      -- A map should now be visible
+        ++ Make sure you are actively signed into ArcGIS
+      -- Click a location anywhere on the map
+      -- Click "Request Unicorn" at upper right portion of screen
+        ++ A unicorn should be seeing approaching the marked location!
+      -- In the DynamoDB table, a new item should be visible similar to the result of the test event (refer to 
+         step 5)
+      
+       
+      
+      
+      
+      
 
