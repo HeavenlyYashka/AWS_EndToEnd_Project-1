@@ -16,7 +16,8 @@
     
     Clone the repository
     * Select created repo in CodeCommit and Clone HTTPS URL from "Clone URL" dropdown.
-      -- This will not actually "clone" the repo but will rather copy the URL that can be used to clone the repo.
+      -- This will not actually "clone" the repo but will rather copy the URL that can be used to clone the 
+         repo.
     * Open AWS CLI
     * Paste clone URL and enter Username & Password when prompted
       -- These were generated earlier
@@ -31,28 +32,22 @@
       git commit -m <"commit message">
       git push
       <Enter Username/Password>
-      
-
-      
-      
-    
+       
 ### 2. A way to handle permissions for code  
-    *- Move information from above here -*
-    
-### 3. A place to host website with permissible updates
     Create a new app for hosting in Amplify
     *  New app -> Host web app -> AWS CodeCommit -> Select repo -> Check Allow AWS...
        -> Select New Service role -> Review, Save and deploy
     ** If deployment fails, refer to text below:
-         AWS have also changed the Amplify interface so you don't configure the role as part of the initial 
-         setup. However, within the app,  under App settings -> General settings, you can configure the service 
-         role after creating the app. I wouldn't have noticed this without your video walkthrough. My service 
-         role was automatically set to AdministratorAccess, which had AdministratorAccess permissions, and 
-         resulted in failed deployments. This required changing the role to AmplifyConsoleServiceRole (with the 
-         AdministratorAccess-Amplify policy) to fix this issue.
-         -- Redeploy
+       AWS have also changed the Amplify interface so you don't configure the role as part of the initial 
+       setup. However, within the app,  under App settings -> General settings, you can configure the service 
+       role after creating the app. I wouldn't have noticed this without your video walkthrough. My service 
+       role was automatically set to AdministratorAccess, which had AdministratorAccess permissions, and 
+       resulted in failed deployments. This required changing the role to AmplifyConsoleServiceRole (with the 
+       AdministratorAccess-Amplify policy) to fix this issue.
+      ++ Redeploy
     *  Open site URL to confirm site is active
-
+    
+### 3. A place to host website with permissible updates
     Open repo in CodeCommit and inspect "index.html" file
     * Edit body section of .html with any text of choice
     * Commit changes
@@ -178,7 +173,7 @@
       -- On Line 95, change ArcGIS value from 4.3 to 4.6
       -- Commit changes
 
-    Wrap it all up!
+### Wrap it all up!
     * After redeployment in Amplify, refresh WildRydes website
       -- A map should now be visible
         ++ Make sure you are actively signed into ArcGIS
