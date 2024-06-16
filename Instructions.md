@@ -1,6 +1,6 @@
 #### * IMPORTANT *
   -- Due to a few issues in AWS, it is highly advisable to use us-west-2/Oregon as your region for this project
-  -- create account at https://www.arcgis.com/index.html
+  -- create account at https://www.arcgis.com/index.html (this will be needed for geographical data)
   
 ### 1. A way to store, update, and pull code
     Create an empty repo in CodeCommit
